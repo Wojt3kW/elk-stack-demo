@@ -11,7 +11,7 @@ if %errorlevel% == 0 (
 
 setlocal EnableDelayedExpansion
 
-@rem Create directory where elasticsearch will be stored data
+@rem Create directory where elasticsearch data will be stored
 @rem If you change this directory remember to set same path at .env file at ES_DATA_DIR
 if not exist "D:\Docker\data\elasticsearch-data" (
   mkdir "D:\Docker\data\elasticsearch-data"
@@ -23,7 +23,7 @@ if not exist "D:\Docker\data\elasticsearch-data" (
   )
 )
 
-@rem Create directory where kibana will be stored data
+@rem Create directory where kibana data will be stored
 @rem If you change this directory remember to set same path at .env file at KIBANA_DATA_DIR
 if not exist "D:\Docker\data\kibana-data" (
   mkdir "D:\Docker\data\kibana-data"
